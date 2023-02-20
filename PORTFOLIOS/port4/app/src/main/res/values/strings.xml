@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">port4</string>
+    <string name="name_button_label">Get A Name</string>
+    <string name="return_name_button">Return the Name</string>
+</resources>

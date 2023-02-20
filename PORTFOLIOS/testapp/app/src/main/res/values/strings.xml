@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">testapp</string>
+
+    <string name="label_bill">Bill</string>
+    <string name="label_tip_percent">Tip (%)</string>
+    <string name="label_tip">Tip ($)</string>
+    <string name="label_total">Total</string>
+
+    <string name="hint_bill_amount">Enter bill amount</string>
+    <string name="hint_tip_percent">Enter tip %</string>
+
+</resources>
