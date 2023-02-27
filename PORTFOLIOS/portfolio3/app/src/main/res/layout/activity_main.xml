@@ -34,19 +34,20 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/beefPattyRB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:onClick="onClickPattyRB"
             android:text="@string/beef_string" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/turkeyPattyRB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/turkey_string" />
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/veggiePattyRB"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/veggie_string" />
@@ -56,6 +57,7 @@
         android:id="@+id/baconCbx"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="onBaconCbx"
         android:text="@string/bacon_string"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -112,5 +114,26 @@
             android:layout_weight="1"
             android:text="@string/mozzarella_string" />
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/calorieLabelTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="150dp"
+        android:text="@string/calorie_string"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sauceSkb" />
+
+    <TextView
+        android:id="@+id/totalCalorieTV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/calorieLabelTV"
+        app:layout_constraintTop_toBottomOf="@+id/sauceSkb" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
