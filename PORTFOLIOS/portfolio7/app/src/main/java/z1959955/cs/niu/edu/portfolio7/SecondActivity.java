@@ -7,6 +7,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+/*
+    Herbert Morales
+    CSCI-322/522
+    Z1959955
+    Portfolio #7
+    Due Date: 03/10/23
+ */
+
 public class SecondActivity extends AppCompatActivity {
 
     static final String MA_TAG = "APPLE";
@@ -28,7 +36,7 @@ public class SecondActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onStart() {
+    protected void onStart() { //overriding onStart()
         super.onStart();
 
         String start_str = getString(R.string.start_msg2);
@@ -39,7 +47,7 @@ public class SecondActivity extends AppCompatActivity {
     } // end onStart
 
     @Override
-    protected void onResume() {
+    protected void onResume() { //overriding onResume()
         super.onResume();
         String resume_str = getString(R.string.resume_msg2);
 
@@ -50,7 +58,7 @@ public class SecondActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onPause() {
+    protected void onPause() { //overriding onPause()
         super.onPause();
         String resume_str = getString(R.string.pause_msg2);
 
@@ -61,7 +69,7 @@ public class SecondActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onStop() {
+    protected void onStop() { //overriding onStop()
         super.onStop();
 
         String resume_str = getString(R.string.stop_msg2);
@@ -73,7 +81,7 @@ public class SecondActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onRestart() {
+    protected void onRestart() { // overriding onRestart()
         super.onRestart();
         String resume_str = getString(R.string.restart_msg2);
 
@@ -83,7 +91,7 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onDestroy() {
+    protected void onDestroy() { // overriding onDestroy()
         super.onDestroy();
         String resume_str = getString(R.string.destroy_msg2);
 

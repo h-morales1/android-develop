@@ -7,16 +7,22 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
-
+/*
+    Herbert Morales
+    CSCI-322/522
+    Z1959955
+    Portfolio #7
+    Due Date: 03/10/23
+ */
 public class MainActivity extends AppCompatActivity {
 
-    static final String MA_TAG = "APPLE";
+    static final String MA_TAG = "APPLE"; // string to search for in Logcat
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        // string to be displayed in toast during onCreate()
         String create_str = getString(R.string.create_msg);
 
         Toast.makeText(this, create_str, Toast.LENGTH_SHORT).show();
@@ -27,18 +33,18 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onStart() {
+    protected void onStart() { //overriding onStart()
         super.onStart();
-
+        // string to be displayed in toast during onStart()
         String start_str = getString(R.string.start_msg);
 
-        Toast.makeText(this, start_str, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, start_str, Toast.LENGTH_SHORT).show(); // display start_str
 
         Log.d(MA_TAG, start_str);
     } // end onStart
 
     @Override
-    protected void onResume() {
+    protected void onResume() { //overriding onResume()
         super.onResume();
         String resume_str = getString(R.string.resume_msg);
 
@@ -49,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onPause() {
+    protected void onPause() { //overriding onPause()
         super.onPause();
         String resume_str = getString(R.string.pause_msg);
 
@@ -60,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onStop() {
+    protected void onStop() { // override onStop()
         super.onStop();
 
         String resume_str = getString(R.string.stop_msg);
@@ -72,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     @Override
-    protected void onRestart() {
+    protected void onRestart() { // override onRestart()
         super.onRestart();
         String resume_str = getString(R.string.restart_msg);
 
@@ -82,7 +88,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onDestroy() {
+    protected void onDestroy() { // override onDestroy()
         super.onDestroy();
         String resume_str = getString(R.string.destroy_msg);
 
@@ -91,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d(MA_TAG, resume_str);
     }
 
-    public void doSecond(View view) {
+    public void doSecond(View view) { // onClick go to second activity
         //
         Intent secondActIntent = new Intent(this, SecondActivity.class);
         startActivity(secondActIntent);
