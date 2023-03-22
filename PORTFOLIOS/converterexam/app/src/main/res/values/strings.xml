@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">converterexam</string>
+    <string name="app_title">Unit Conversion Calculator</string>
+    <string name="feet_label">Feet to Meters</string>
+    <string name="inches_label">Inches to Centimeters</string>
+    <string name="pounds_label">Pounds to Grams</string>
+    <string name="button_label">Perform the Conversion</string>
+    <string name="perform_calc_btn">convert</string>
+    <string name="result_label">Result:</string>
+    <string name="back_button">Go Back</string>
+
+</resources>
